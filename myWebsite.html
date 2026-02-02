@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>MyWebsite</title>
+
+     <!---Bootstrap CSS --->
+        <link rel="stylesheet" href="myWebsite.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+<body>
+
+<!-- NAVGAR CLASS -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color:#e97ae0;">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="beabajaica.PNG" width="30" height="24">
+      <strong>bebajaica</strong>
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse flex-nowrap" id="navbarNav">
+
+      <!-- MENU -->
+      <ul class="navbar-nav ms-auto gap-3 flex-nowrap">
+        <li class="nav-item">
+          <a class="nav-link" href="myWebsite.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="portfolio.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacts</a>
+        </li>
+
+      <!-- LOGIN -->
+      <form class="d-flex ms-lg-3 mt-2 mt-lg-0">
+        <a href="login.html" class="btn text-white login-btn" role="button">
+          Log in
+        </a>
+      </form>
+
+    </div>
+
+  </div>
+</nav>
+
+
+
+<!-- HOMEPAGE SECTION -->
+<section class="hero-section">
+  <div class="container">
+    <!-- Bootstrap Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <!-- Carousel Inner -->
+      <div class="carousel-inner hero-carousel-inner">
+       
+        <!-- Slide 1 - Welcome -->
+        <div class="carousel-item active first-slide">
+          <div class="hero-content">
+            <h1 class="hero-title">Welcome to Bebajaica</h1>
+            <p class="hero-subtitle">Your Digital Journey Starts Here</p>
+          </div>
+        </div>
+        
+        <!-- Slide 2 - Quote -->
+        <div class="carousel-item">
+          <div class="hero-content quote-content">
+            <h2 class="quote-text">"SMALL STEPS LEAD TO GREAT SYSTEMS."</h2>
+            <p class="quote-tags">DESIGN / DEVELOP / IMPROVE</p>
+          </div>
+        </div>
+        
+        <!-- Slide 3 - Call to Action -->
+        <div class="carousel-item">
+          <div class="hero-content">
+            <h2 class="hero-title">Ready to Build Something Amazing?</h2>
+            <p class="hero-subtitle">Let's create the future together</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators-custom">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS SECTION -->
+<section class="cards-section">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Card 1 - Portfolio -->
+      <div class="col-md-4">
+        <div class="feature-card card-1">
+          <div class="card-content">
+            <a href="projects.html" class="card-title-link">
+              <h3>Portfolio</h3>
+            </a>
+            <p>View my complete portfolio and projects</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 2 - About Me -->
+      <div class="col-md-4">
+        <div class="feature-card card-2">
+          <div class="card-content">
+            <a href="portfolio.html#about-section" class="card-title-link">
+              <h3>About Me</h3>
+            </a>
+            <p>Learn more about my journey as an IT student</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 3 - Google Site -->
+      <div class="col-md-4">
+        <div class="feature-card card-3">
+          <div class="card-content">
+            <a href="#" target="_blank" class="card-title-link" id="google-site-link">
+              <h3>My Site</h3>
+            </a>
+            <p>Visit my Google Site for more information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="login.html" class="btn learn-more-btn" role="button">Learn More</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!---Bootstrap Script --->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- Google Site Link Script -->
+<script>
+document.getElementById('google-site-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Replace this URL with your actual Google Site URL
+    window.open('https://sites.google.com/your-google-site-url', '_blank');
+});
+</script>
+
+
+</body>
+</html>

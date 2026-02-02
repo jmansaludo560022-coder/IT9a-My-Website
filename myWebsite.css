@@ -1,0 +1,404 @@
+body {
+    background-color: #f5f0eb;
+    font-family: 'Arial', sans-serif;
+    padding-top: 80px; /* Account for fixed navbar */
+}
+
+.navbar {
+    background-color: #e97ae0 !important;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333 !important;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 8px 15px !important;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.login-btn {
+    background-color: #cc32a8 !important;
+    border: none !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    background-color: #b8298f !important;
+}
+
+.hero-section {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+#heroCarousel {
+    background-color: #e97ae0;
+    border-radius: 15px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+    border-radius: 15px;
+}
+
+.carousel-item {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e97ae0;
+}
+
+
+.carousel-item.first-slide {
+    background-image: url('Homepage11.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e97ae0; /* Fallback color */
+}
+
+.carousel-item.first-slide .hero-content {
+    color: #ef4ccb;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item.first-slide .hero-title {
+    color: #ef4ccb;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.carousel-item.first-slide .hero-subtitle {
+    color: #ef4ccb;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.quote-content .quote-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    line-height: 1.2;
+}
+
+.quote-content .quote-tags {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+
+.carousel-indicators-custom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-indicators-custom button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(233, 122, 224, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators-custom button.active {
+    background-color: #e97ae0;
+}
+
+/* Bootstrap carousel controls styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Cards Section */
+.cards-section {
+    padding: 40px 0 80px 0;
+}
+
+.feature-card {
+    background-color: #e97ae0;
+    border-radius: 15px;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background images for each card */
+.feature-card.card-1 {
+    background-image: linear-gradient(rgba(233, 122, 224, 0.7), rgba(233, 122, 224, 0.7)), url('icon1.png');
+}
+
+.feature-card.card-2 {
+    background-image: linear-gradient(rgba(233, 122, 224, 0.7), rgba(233, 122, 224, 0.7)), url('icon2.png');
+}
+
+.feature-card.card-3 {
+    background-image: linear-gradient(rgba(233, 122, 224, 0.7), rgba(233, 122, 224, 0.7)), url('icon3.png');
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(233, 122, 224, 0.3);
+}
+
+.card-content {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: white;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.card-title-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.card-title-link:hover {
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+}
+
+.card-title-link h3 {
+    transition: transform 0.3s ease;
+}
+
+.card-title-link:hover h3 {
+    transform: scale(1.1);
+}
+
+.learn-more-btn {
+    background-color: #cc32a8 !important;
+    color: white !important;
+    border: none !important;
+    padding: 15px 40px !important;
+    border-radius: 25px !important;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);
+}
+
+.learn-more-btn:hover {
+    background-color: #cc32a8 !important;
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(45, 90, 61, 0.4);
+}
+
+@media (max-width: 768px) {
+    #heroCarousel {
+        height: 300px;
+        margin: 0 15px;
+    }
+    
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .carousel-item.first-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .carousel-item.first-slide .hero-title {
+        color: #ef4ccb;
+        font-size: 1.8rem;
+    }
+    
+    .carousel-item.first-slide .hero-subtitle {
+        color: #ef4ccb;
+        font-size: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .quote-content .quote-text {
+        font-size: 1.6rem;
+    }
+    
+    .quote-content .quote-tags {
+        font-size: 0.9rem;
+    }
+    
+    .feature-card {
+        height: 150px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    
+    .card-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .card-content p {
+        font-size: 0.8rem;
+    }
+    
+    .learn-more-btn {
+        padding: 12px 30px !important;
+        font-size: 1.1rem;
+    }
+    
+    body {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .login-btn {
+        padding: 6px 15px !important;
+        font-size: 0.9rem;
+    }
+    
+    .learn-more-btn {
+        padding: 10px 25px !important;
+        font-size: 1rem;
+    }
+    
+    #heroCarousel {
+        height: 250px;
+    }
+    
+    .carousel-item {
+        height: 250px;
+    }
+    
+    .carousel-item.first-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .carousel-item.first-slide .hero-title {
+        color: #ef4ccb;
+        font-size: 1.5rem;
+    }
+    
+    .carousel-item.first-slide .hero-subtitle {
+        color: #ef4ccb;
+        font-size: 0.9rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .quote-content .quote-text {
+        font-size: 1.3rem;
+    }
+    
+    .quote-content .quote-tags {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+}

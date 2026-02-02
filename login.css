@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f0eb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.login-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(233, 122, 224, 0.2);
+    border: 2px solid rgba(233, 122, 224, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 60px;
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.login-header h1 {
+    color: #e97ae0;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+.auth-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.form-group .form-control:focus {
+    outline: none;
+    border-color: #e97ae0;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(233, 122, 224, 0.1);
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Secondary Button (Sign Up) */
+.btn.btn-secondary {
+    flex: 1;
+    background-color: #f8f9fa;
+    color: #666;
+    border: 2px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #e97ae0;
+    color: white;
+    border-color: #e97ae0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(233, 122, 224, 0.2);
+    text-decoration: none;
+}
+
+/* Primary Button (Login) */
+.btn.btn-primary {
+    flex: 1;
+    background-color: #cc32a8;
+    color: white;
+    border: 2px solid #cc32a8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #b8298f;
+    border-color: #b8298f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(204, 50, 168, 0.3);
+}
+
+/* Back to Home */
+.back-home {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.back-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #e97ae0;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .login-card {
+        padding: 30px 25px;
+        margin: 10px;
+    }
+    
+    .login-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 40px;
+    }
+    
+    .form-group .form-control {
+        padding: 10px 12px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn.btn-secondary,
+    .btn.btn-primary {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    
+    .login-card {
+        padding: 25px 20px;
+    }
+    
+    .login-header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .button-group {
+        gap: 8px;
+    }
+}

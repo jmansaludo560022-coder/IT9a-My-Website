@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bebajaica</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Logo and Title -->
+            <div class="login-header">
+                <img src="beabajaica.PNG" alt="Bebajaica Logo" class="logo">
+                <h1>Welcome to Bebajaica</h1>
+                <p class="subtitle">Please login or create an account to continue</p>
+            </div>
+
+            <!-- Simple Login Form -->
+            <form action="myWebsite.html" method="get" class="auth-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+
+                <!-- Button Group -->
+                <div class="button-group">
+                    <a href="signup.html" class="btn btn-secondary">Sign Up</a>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+
+            <!-- Back to Home -->
+            <div class="back-home">
+                <a href="myWebsite.html" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

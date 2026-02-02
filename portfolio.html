@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaica-An Mansaludo - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="myWebsite.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- NAVGAR CLASS -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#e97ae0;">
+     <div class="container-fluid">
+
+    <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="beabajaica.PNG" width="30" height="24">
+        <strong>bebajaica</strong>
+        </a>
+
+    <!-- Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse flex-nowrap" id="navbarNav">
+
+      <!-- MENU -->
+      <ul class="navbar-nav ms-auto gap-3 flex-nowrap">
+        <li class="nav-item">
+          <a class="nav-link" href="myWebsite.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="portfolio.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacts</a>
+        </li>
+      </ul>
+
+      <!-- LOGIN -->
+      <form class="d-flex ms-lg-3 mt-2 mt-lg-0">
+        <a href="login.html" class="btn text-white login-btn" role="button">
+          Log in
+        </a>
+      </form>
+
+  </div>
+  </div>
+</nav>
+
+    
+    <!-- About Me Section -->
+    <section class="about-section" id="about-section">
+        <div class="container container--narrow">
+            <div class="section-header">
+                <h1 class="name">Hello, I'm Jaica-An Mansaludo</h1>
+                <p class="title">An Information Technology Student, your future web developer.</p>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="AboutMe_Pic.jpg" alt="Jaica-An Mansaludo">
+                </div>
+                <div class="about-text">
+                    <p class="about-description">I'm an Information Technology major with a strong interest in web development and system design. I enjoy creating structured, user-friendly websites and applications that solve technicality and through functionality might as well. My goal is to become a skilled developer who builds efficient, reliable, and meaningful digital solutions.</p>
+                    <div class="resume-section">
+                        <button class="resume-btn center" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                            <i class="fas fa-file-pdf"></i> See my CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information Sections -->
+    <section class="info-sections">
+        <div class="container container--narrow">
+            <div class="section-header">
+                <h2 class="section-title">More About Me</h2>
+                <p class="section-subtitle">Choose a topic below to read more.</p>
+                <div class="title-underline"></div>
+            </div>
+            
+            <!-- Content Panels (Card) -->
+            <div class="info-content-wrapper">
+                <!-- Education & Background -->
+                <div class="info-panel active" id="education">
+                    <div class="info-panel-content">
+                        <div class="info-icon-large">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education & Background</h3>
+                        <p>I am currently pursuing a Bachelor of Science in Information Technology at the University of Mindanao. I am an undergraduate student in my current year level, focusing on building a strong foundation in both theoretical and practical aspects of IT. My relevant coursework includes web development (HTML, CSS), Java programming, database management, and systems analysis and design, which have strengthened my problem-solving and technical skills.</p>
+                    </div>
+                </div>
+
+                <!-- Why I Chose IT/Web Development -->
+                <div class="info-panel" id="why-it">
+                    <div class="info-panel-content">
+                        <div class="info-icon-large">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Why I Chose IT / Web Development</h3>
+                        <p>I chose IT, particularly web development, because I am interested in how technology can be used to create functional and accessible solutions for real-world problems. What excites me about technology is its constant evolution and the opportunity to continuously learn while developing systems that improve efficiency, communication, and user experience.</p>
+                    </div>
+                </div>
+
+                <!-- Personal Interests & Hobbies -->
+                <div class="info-panel" id="interests">
+                    <div class="info-panel-content">
+                        <div class="info-icon-large">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Personal Interests & Hobbies</h3>
+                        <p>Outside of coding, I enjoy creating handmade crafts, drawing, reading, and exploring different places and hobbies. These activities help develop my creativity, patience, and attention to detail, which are valuable in IT and web development, especially in designing user-friendly and visually organized systems.</p>
+                    </div>
+                </div>
+
+                <!-- Career Goals & Aspirations -->
+                <div class="info-panel" id="goals">
+                    <div class="info-panel-content">
+                        <div class="info-icon-large">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Career Goals & Aspirations</h3>
+                        <p>In the short term, my goal is to strengthen my skills in web development and programming through academic projects and hands-on experience. In the long term, I aspire to work as a web developer or IT professional contributing to meaningful systems in education, business, or healthcare. My dream is to be part of a company or project that values innovation, reliability, and social impact through technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Circular Navigation -->
+            <div class="circle-navigation">
+                <button class="circle-btn active" data-section="education">
+                    <div class="circle-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="circle-label">Education & Background</div>
+                </button>
+                <button class="circle-btn" data-section="why-it">
+                    <div class="circle-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="circle-label">Why I Chose IT</div>
+                </button>
+                <button class="circle-btn" data-section="interests">
+                    <div class="circle-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="circle-label">Interests & Hobbies</div>
+                </button>
+                <button class="circle-btn" data-section="goals">
+                    <div class="circle-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="circle-label">Career Goals</div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Resume.jpg" alt="Resume" class="resume-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container container--narrow">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+            <div class="skill-card">
+            <div class="skill-header">
+                <i class="fab fa-html5"></i>
+            </div>
+                <h3>HTML</h3>
+                <p>I use HTML to create well-structured and semantic web pages.</p>
+            </div>
+            <div class="skill-card">
+            <div class="skill-header">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+                <h3>CSS</h3>
+                <p>I use CSS to design responsive and visually appealing layouts.</p>
+            </div>
+            <div class="skill-card">
+            <div class="skill-header">
+                <i class="fab fa-java"></i>
+            </div>
+                <h3>JAVA</h3>
+                <p>I use Java for building logical object-oriented programs and simple systems.</p>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+        <div class="container container--narrow">
+            <div class="section-header">
+                <h2 class="section-title">Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="achievements-grid">
+            <div class="achievement-card">
+                    <img src="ITS.jpg" alt="Java Certification">
+                    <div class="achievement-card-content">
+                        <h3>Java Certification (ITS)</h3>
+                    </div>
+            </div>
+            <div class="achievement-card">
+                    <img src="Pharmacy.jpg" alt="Pharmacy Inventory System">
+                    <div class="achievement-card-content">
+                        <h3>Pharmacy Inventory System</h3>
+                        <p>(Prototyping & Concept Paper)</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+    <div class="container">
+        <p> © 2026 Jaica-An Mansaludo | Information Technology</p>
+    </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!-- Circle Navigation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const circleBtns = document.querySelectorAll('.circle-btn');
+            const infoPanels = document.querySelectorAll('.info-panel');
+            
+            circleBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetSection = this.getAttribute('data-section');
+                    
+                    // Remove active class from all buttons and panels
+                    circleBtns.forEach(b => b.classList.remove('active'));
+                    infoPanels.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding panel
+                    this.classList.add('active');
+                    document.getElementById(targetSection).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

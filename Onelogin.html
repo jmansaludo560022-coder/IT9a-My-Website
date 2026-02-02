@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login - Bebajaica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .login-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(233, 122, 224, 0.2);
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid rgba(233, 122, 224, 0.1);
+        }
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-header h1 {
+            color: #e97ae0;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            background-color: #fafafa;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            border-color: #e97ae0;
+            outline: none;
+            background-color: white;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .btn {
+            flex: 1;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary {
+            background-color: #f8f9fa;
+            color: #666;
+            border: 2px solid #e0e0e0;
+        }
+        .btn-secondary:hover {
+            background-color: #e97ae0;
+            color: white;
+            border-color: #e97ae0;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background-color: #cc32a8;
+            color: white;
+            border: 2px solid #cc32a8;
+        }
+        .btn-primary:hover {
+            background-color: #b8298f;
+            border-color: #b8298f;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .back-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            color: #e97ae0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-header">
+            <h1>Welcome to Bebajaica</h1>
+            <p class="subtitle">Please login or create an account to continue</p>
+        </div>
+
+        <form action="myWebsite.html" method="get">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="button-group">
+                <a href="signup.html" class="btn btn-secondary">Sign Up</a>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+
+        <div class="back-home">
+            <a href="myWebsite.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
