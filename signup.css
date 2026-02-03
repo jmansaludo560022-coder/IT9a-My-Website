@@ -1,0 +1,110 @@
+body {
+    background: #f5f0eb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* CENTER CONTAINER */
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+/* CARD */
+.signup-card {
+    background: #fff;
+    width: 100%;
+    max-width: 720px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.signup-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 12px;
+}
+
+.signup-header h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* FORM SECTIONS */
+.form-section {
+    border: none;
+    margin-bottom: 35px;
+}
+
+.form-section legend {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #cc32a8;
+}
+
+/* INPUT SPACING */
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+/* BUTTONS */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.button-group .btn {
+    padding: 10px 26px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+}
+
+/* BACK HOME */
+.back-home {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.back-home a:hover {
+    color: #cc32a8;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .signup-card {
+        padding: 25px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

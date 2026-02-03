@@ -4,111 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Bebajaica</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="signup.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <div class="signup-container">
-        <div class="signup-card">
-            <!-- Logo and Title -->
-            <div class="signup-header">
-                <img src="beabajaica.PNG" alt="Bebajaica Logo" class="logo">
-                <h1>Create Account</h1>
-                <p class="subtitle">Fill in your information to get started</p>
-            </div>
 
-            <!-- Registration -->
-            <form action="myWebsite.html" method="get" class="registration-form">
-                
-                <!-- Personal Information -->
-                <fieldset class="form-section">
-                    <legend>Personal Information</legend>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="firstName">First Name:</label>
-                                <input type="text" id="firstName" name="firstName" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="lastName">Last Name:</label>
-                                <input type="text" id="lastName" name="lastName" class="form-control" required>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="birthday">Birthday:</label>
-                                <input type="date" id="birthday" name="birthday" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="contactNumber">Contact Number:</label>
-                                <input type="tel" id="contactNumber" name="contactNumber" class="form-control" pattern="[0-9]{10,11}" required>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
+<div class="signup-container">
+    <div class="signup-card">
 
-                <!-- Other Details -->
-                <fieldset class="form-section">
-                    <legend>Other Details</legend>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="address">Address:</label>
-                        <textarea id="address" name="address" class="form-control" rows="3" required></textarea>
-                    </div>
-                </fieldset>
-
-                <!-- Account Details -->
-                <fieldset class="form-section">
-                    <legend>Account Details</legend>
-                    
-                    <div class="form-group">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" class="form-control" required>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" class="form-control" required minlength="6">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="verifyPassword">Verify Password:</label>
-                                <input type="password" id="verifyPassword" name="verifyPassword" class="form-control" required minlength="6">
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <!-- Button Group -->
-                <div class="button-group">
-                    <a href="login.html" class="btn btn-secondary">Back to Login</a>
-                    <button type="submit" class="btn btn-primary">Create Account</button>
-                </div>
-            </form>
-
-            <!-- Back to Home -->
-            <div class="back-home">
-                <a href="myWebsite.html" class="back-link">← Back to Home</a>
-            </div>
+        <!-- Header -->
+        <div class="signup-header">
+            <img src="beabajaica.PNG" alt="Bebajaica Logo" class="logo">
+            <h1>Create Account</h1>
+            <p class="subtitle">Fill in your information to get started</p>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Form -->
+        <form action="myWebsite.html" method="get">
+
+            <!-- Personal Information -->
+            <fieldset class="form-section">
+                <legend>Personal Information</legend>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Birthday</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Other Details -->
+            <fieldset class="form-section">
+                <legend>Other Details</legend>
+
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Address</label>
+                    <textarea class="form-control" rows="3" required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Account Details -->
+            <fieldset class="form-section">
+                <legend>Account Details</legend>
+
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Verify Password</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <a href="login.html" class="btn btn-outline-secondary">Back to Login</a>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </div>
+
+        </form>
+
+        <div class="back-home">
+            <a href="myWebsite.html">← Back to Home</a>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

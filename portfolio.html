@@ -59,109 +59,274 @@
     <!-- About Me Section -->
     <section class="about-section" id="about-section">
         <div class="container container--narrow">
-            <div class="section-header">
-                <h1 class="name">Hello, I'm Jaica-An Mansaludo</h1>
-                <p class="title">An Information Technology Student, your future web developer.</p>
-                <div class="title-underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="AboutMe_Pic.jpg" alt="Jaica-An Mansaludo">
+            <div class="about-main-content">
+                <!-- Left Column: Picture Only -->
+                <div class="about-left-column">
+                    <div class="about-image">
+                        <img src="AboutMe_Pic.jpg" alt="Jaica-An Mansaludo">
+                    </div>
                 </div>
-                <div class="about-text">
-                    <p class="about-description">I'm an Information Technology major with a strong interest in web development and system design. I enjoy creating structured, user-friendly websites and applications that solve technicality and through functionality might as well. My goal is to become a skilled developer who builds efficient, reliable, and meaningful digital solutions.</p>
-                    <div class="resume-section">
-                        <button class="resume-btn center" data-bs-toggle="modal" data-bs-target="#resumeModal">
-                            <i class="fas fa-file-pdf"></i> See my CV
-                        </button>
+                
+                <!-- Right Column: Hello Section -->
+                <div class="about-right-column">
+                    <div class="section-header">
+                        <h1 class="name">Hello, I'm Jaica-An Mansaludo</h1>
+                        <p class="title">An Information Technology Student, your future web developer.</p>
+                        <div class="title-underline"></div>
+                        <div class="button-section">
+                            <button class="resume-btn primary-btn" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                                <i class="fas fa-file-pdf"></i> See my CV
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Additional Information Sections -->
-    <section class="info-sections">
+    <!-- QUOTE SECTION -->
+    <section class="quote-section-about">
+        <div class="container">
+            <div class="quote-slide">
+                <div class="quote-content">
+                    <div class="quote-container">
+                        <div class="quote-header">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="quote-line"></div>
+                        </div>
+                        
+                        <div class="quote-main">
+                            <h2 class="quote-text">"SMALL STEPS LEAD TO GREAT SYSTEMS."</h2>
+                        </div>
+                        
+                        <div class="quote-footer">
+                            <div class="quote-tags-container">
+                                <div class="tag-item">
+                                    <i class="fas fa-palette"></i>
+                                    <span>DESIGN</span>
+                                </div>
+                                <div class="tag-separator">/</div>
+                                <div class="tag-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>DEVELOP</span>
+                                </div>
+                                <div class="tag-separator">/</div>
+                                <div class="tag-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>IMPROVE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quote-decorative">
+                            <div class="floating-elements">
+                                <div class="float-item" style="--delay: 0s; --x: -20px; --y: -30px;">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="float-item" style="--delay: 1s; --x: 25px; --y: -40px;">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="float-item" style="--delay: 2s; --x: -30px; --y: 20px;">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="float-item" style="--delay: 1.5s; --x: 35px; --y: 25px;">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Description Section -->
+    <section class="about-description-section">
         <div class="container container--narrow">
-            <div class="section-header">
-                <h2 class="section-title">More About Me</h2>
-                <p class="section-subtitle">Choose a topic below to read more.</p>
-                <div class="title-underline"></div>
+            <div class="about-me-wrapper" id="about-me-wrapper">
+                
+                <!-- Left Column (or full width when collapsed) -->
+                <div class="about-me-main" id="about-me-main">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <div class="description-content">
+                        <p class="about-description">I'm an Information Technology major with a strong interest in web development and system design. I enjoy creating structured, user-friendly websites and applications that solve technicality and through functionality might as well. My goal is to become a skilled developer who builds efficient, reliable, and meaningful digital solutions.</p>
+                        
+                        <!-- More About Me Button -->
+                        <div class="more-about-button-section">
+                            <button class="more-about-toggle-btn secondary-btn" onclick="toggleMoreAboutInline()">
+                                More about me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column (appears when expanded) -->
+                <div class="about-me-details" id="about-me-details" style="display: none;">
+                    <div class="details-grid">
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Education</h4>
+                            <p>Bachelor of Science in Information Technology at the University of Mindanao. Focusing on web development, Java programming, and database management.</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Why IT</h4>
+                            <p>Passionate about creating functional solutions for real-world problems through technology that improves efficiency and user experience.</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Interests</h4>
+                            <p>Enjoy handmade crafts, drawing, and reading. These activities develop creativity and attention to detail valuable in web development.</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>Goals</h4>
+                            <p>Aspire to become a skilled web developer contributing to meaningful systems in education, business, or healthcare with social impact.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Content Panels (Card) -->
-            <div class="info-content-wrapper">
-                <!-- Education & Background -->
-                <div class="info-panel active" id="education">
-                    <div class="info-panel-content">
-                        <div class="info-icon-large">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Education & Background</h3>
-                        <p>I am currently pursuing a Bachelor of Science in Information Technology at the University of Mindanao. I am an undergraduate student in my current year level, focusing on building a strong foundation in both theoretical and practical aspects of IT. My relevant coursework includes web development (HTML, CSS), Java programming, database management, and systems analysis and design, which have strengthened my problem-solving and technical skills.</p>
-                    </div>
-                </div>
+        </div>
+    </section>
 
-                <!-- Why I Chose IT/Web Development -->
-                <div class="info-panel" id="why-it">
-                    <div class="info-panel-content">
-                        <div class="info-icon-large">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Why I Chose IT / Web Development</h3>
-                        <p>I chose IT, particularly web development, because I am interested in how technology can be used to create functional and accessible solutions for real-world problems. What excites me about technology is its constant evolution and the opportunity to continuously learn while developing systems that improve efficiency, communication, and user experience.</p>
-                    </div>
-                </div>
-
-                <!-- Personal Interests & Hobbies -->
-                <div class="info-panel" id="interests">
-                    <div class="info-panel-content">
-                        <div class="info-icon-large">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Personal Interests & Hobbies</h3>
-                        <p>Outside of coding, I enjoy creating handmade crafts, drawing, reading, and exploring different places and hobbies. These activities help develop my creativity, patience, and attention to detail, which are valuable in IT and web development, especially in designing user-friendly and visually organized systems.</p>
-                    </div>
-                </div>
-
-                <!-- Career Goals & Aspirations -->
-                <div class="info-panel" id="goals">
-                    <div class="info-panel-content">
-                        <div class="info-icon-large">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3>Career Goals & Aspirations</h3>
-                        <p>In the short term, my goal is to strengthen my skills in web development and programming through academic projects and hands-on experience. In the long term, I aspire to work as a web developer or IT professional contributing to meaningful systems in education, business, or healthcare. My dream is to be part of a company or project that values innovation, reliability, and social impact through technology.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Circular Navigation -->
-            <div class="circle-navigation">
-                <button class="circle-btn active" data-section="education">
-                    <div class="circle-icon">
+    <!-- More About Me Section - Keep for backward compatibility but hide -->
+    <section class="more-about-section" id="more-about-content" style="display: none;">
+        <div class="container container--narrow">
+            <div class="more-about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="circle-label">Education & Background</div>
-                </button>
-                <button class="circle-btn" data-section="why-it">
-                    <div class="circle-icon">
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Information Technology at the University of Mindanao. Focusing on web development, Java programming, and database management.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <div class="circle-label">Why I Chose IT</div>
-                </button>
-                <button class="circle-btn" data-section="interests">
-                    <div class="circle-icon">
+                    <h3>Why IT</h3>
+                    <p>Passionate about creating functional solutions for real-world problems through technology that improves efficiency and user experience.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
                         <i class="fas fa-palette"></i>
                     </div>
-                    <div class="circle-label">Interests & Hobbies</div>
-                </button>
-                <button class="circle-btn" data-section="goals">
-                    <div class="circle-icon">
+                    <h3>Interests</h3>
+                    <p>Enjoy handmade crafts, drawing, and reading. These activities develop creativity and attention to detail valuable in web development.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <div class="circle-label">Career Goals</div>
-                </button>
+                    <h3>Goals</h3>
+                    <p>Aspire to become a skilled web developer contributing to meaningful systems in education, business, or healthcare with social impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Achievements Combined Section -->
+    <section class="skills-achievements-section">
+        <div class="container container--narrow">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Achievements</h2>
+            </div>
+            
+            <!-- Folder Cards -->
+            <div class="folder-cards-grid">
+                <div class="folder-card" onclick="toggleSkills()">
+                    <div class="folder-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <p>Click to view my technical expertise</p>
+                    <div class="folder-arrow">
+                        <i class="fas fa-chevron-down" id="skills-arrow"></i>
+                    </div>
+                </div>
+                
+                <div class="folder-card" onclick="toggleAchievements()">
+                    <div class="folder-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Achievements</h3>
+                    <p>Click to view my accomplishments</p>
+                    <div class="folder-arrow">
+                        <i class="fas fa-chevron-down" id="achievements-arrow"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Content - Initially Hidden -->
+            <div class="skills-content" id="skills-content" style="display: none;">
+                <div class="content-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h4>HTML</h4>
+                        <p>Well-structured and semantic web pages</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS</h4>
+                        <p>Responsive and visually appealing layouts</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h4>Java</h4>
+                        <p>Object-oriented programs and simple systems</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements Content - Initially Hidden -->
+            <div class="achievements-content" id="achievements-content" style="display: none;">
+                <div class="content-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-image">
+                            <img src="ITS.jpg" alt="Java Certification">
+                        </div>
+                        <div class="achievement-info">
+                            <h4>Java Certification (ITS)</h4>
+                            <p>Professional certification in Java programming</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-image">
+                            <img src="Pharmacy.jpg" alt="Pharmacy System">
+                        </div>
+                        <div class="achievement-info">
+                            <h4>Pharmacy Inventory System</h4>
+                            <p>Prototyping & Concept Paper development</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,66 +346,6 @@
         </div>
     </div>
 
-    
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container container--narrow">
-            <div class="section-header">
-                <h2 class="section-title">Skills</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="skills-grid">
-            <div class="skill-card">
-            <div class="skill-header">
-                <i class="fab fa-html5"></i>
-            </div>
-                <h3>HTML</h3>
-                <p>I use HTML to create well-structured and semantic web pages.</p>
-            </div>
-            <div class="skill-card">
-            <div class="skill-header">
-                <i class="fab fa-css3-alt"></i>
-            </div>
-                <h3>CSS</h3>
-                <p>I use CSS to design responsive and visually appealing layouts.</p>
-            </div>
-            <div class="skill-card">
-            <div class="skill-header">
-                <i class="fab fa-java"></i>
-            </div>
-                <h3>JAVA</h3>
-                <p>I use Java for building logical object-oriented programs and simple systems.</p>
-        </div>
-        </div>
-        </div>
-    </section>
-    
-    <!-- Achievements Section -->
-    <section class="achievements-section">
-        <div class="container container--narrow">
-            <div class="section-header">
-                <h2 class="section-title">Achievements</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="achievements-grid">
-            <div class="achievement-card">
-                    <img src="ITS.jpg" alt="Java Certification">
-                    <div class="achievement-card-content">
-                        <h3>Java Certification (ITS)</h3>
-                    </div>
-            </div>
-            <div class="achievement-card">
-                    <img src="Pharmacy.jpg" alt="Pharmacy Inventory System">
-                    <div class="achievement-card-content">
-                        <h3>Pharmacy Inventory System</h3>
-                        <p>(Prototyping & Concept Paper)</p>
-                    </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Footer Section -->
     <footer class="footer">
     <div class="container">
@@ -251,26 +356,102 @@
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
-    <!-- Circle Navigation Script -->
+    <!-- More About Me Toggle Function -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const circleBtns = document.querySelectorAll('.circle-btn');
-            const infoPanels = document.querySelectorAll('.info-panel');
+        function toggleMoreAboutInline() {
+            const wrapper = document.getElementById('about-me-wrapper');
+            const details = document.getElementById('about-me-details');
+            const toggleBtn = document.querySelector('.more-about-toggle-btn');
             
-            circleBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const targetSection = this.getAttribute('data-section');
-                    
-                    // Remove active class from all buttons and panels
-                    circleBtns.forEach(b => b.classList.remove('active'));
-                    infoPanels.forEach(p => p.classList.remove('active'));
-                    
-                    // Add active class to clicked button and corresponding panel
-                    this.classList.add('active');
-                    document.getElementById(targetSection).classList.add('active');
-                });
-            });
-        });
+            if (details.style.display === 'none' || details.style.display === '') {
+                // Show the details in two-column layout
+                details.style.display = 'block';
+                wrapper.classList.add('two-column-layout');
+                toggleBtn.textContent = 'Show less';
+                
+                // Smooth transition
+                setTimeout(() => {
+                    details.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest'
+                    });
+                }, 300);
+            } else {
+                // Hide the details and return to single column
+                details.style.display = 'none';
+                wrapper.classList.remove('two-column-layout');
+                toggleBtn.textContent = 'More about me';
+            }
+        }
+        
+        // Keep old function for backward compatibility
+        function toggleMoreAbout() {
+            toggleMoreAboutInline();
+        }
+        
+        function toggleSkills() {
+            const skillsContent = document.getElementById('skills-content');
+            const skillsArrow = document.getElementById('skills-arrow');
+            
+            if (skillsContent.style.display === 'none' || skillsContent.style.display === '') {
+                // Show skills content
+                skillsContent.style.display = 'block';
+                skillsArrow.classList.remove('fa-chevron-down');
+                skillsArrow.classList.add('fa-chevron-up');
+                
+                // Hide achievements if open
+                const achievementsContent = document.getElementById('achievements-content');
+                const achievementsArrow = document.getElementById('achievements-arrow');
+                achievementsContent.style.display = 'none';
+                achievementsArrow.classList.remove('fa-chevron-up');
+                achievementsArrow.classList.add('fa-chevron-down');
+                
+                // Smooth scroll to content
+                setTimeout(() => {
+                    skillsContent.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 100);
+            } else {
+                // Hide skills content
+                skillsContent.style.display = 'none';
+                skillsArrow.classList.remove('fa-chevron-up');
+                skillsArrow.classList.add('fa-chevron-down');
+            }
+        }
+        
+        function toggleAchievements() {
+            const achievementsContent = document.getElementById('achievements-content');
+            const achievementsArrow = document.getElementById('achievements-arrow');
+            
+            if (achievementsContent.style.display === 'none' || achievementsContent.style.display === '') {
+                // Show achievements content
+                achievementsContent.style.display = 'block';
+                achievementsArrow.classList.remove('fa-chevron-down');
+                achievementsArrow.classList.add('fa-chevron-up');
+                
+                // Hide skills if open
+                const skillsContent = document.getElementById('skills-content');
+                const skillsArrow = document.getElementById('skills-arrow');
+                skillsContent.style.display = 'none';
+                skillsArrow.classList.remove('fa-chevron-up');
+                skillsArrow.classList.add('fa-chevron-down');
+                
+                // Smooth scroll to content
+                setTimeout(() => {
+                    achievementsContent.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 100);
+            } else {
+                // Hide achievements content
+                achievementsContent.style.display = 'none';
+                achievementsArrow.classList.remove('fa-chevron-up');
+                achievementsArrow.classList.add('fa-chevron-down');
+            }
+        }
     </script>
 </body>
 </html>

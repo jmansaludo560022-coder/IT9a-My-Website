@@ -9,6 +9,7 @@
      <!---Bootstrap CSS --->
         <link rel="stylesheet" href="myWebsite.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
 
 <body>
@@ -60,53 +61,122 @@
 <!-- HOMEPAGE SECTION -->
 <section class="hero-section">
   <div class="container">
-    <!-- Bootstrap Carousel -->
+    <!-- Bootstrap Carousel - Single Slide -->
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
       <!-- Carousel Inner -->
       <div class="carousel-inner hero-carousel-inner">
        
-        <!-- Slide 1 - Welcome -->
+        <!-- Single Slide - Welcome -->
         <div class="carousel-item active first-slide">
           <div class="hero-content">
             <h1 class="hero-title">Welcome to Bebajaica</h1>
             <p class="hero-subtitle">Your Digital Journey Starts Here</p>
           </div>
         </div>
-        
-        <!-- Slide 2 - Quote -->
-        <div class="carousel-item">
-          <div class="hero-content quote-content">
-            <h2 class="quote-text">"SMALL STEPS LEAD TO GREAT SYSTEMS."</h2>
-            <p class="quote-tags">DESIGN / DEVELOP / IMPROVE</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTIST OF THE YEAR SECTION -->
+<section class="artist-section">
+  <div class="container">
+    <div class="artist-content">
+      <div class="artist-header">
+        <h2 class="artist-title">My Favorite Artists</h2>
+        <div class="artist-line"></div>
+      </div>
+      
+      <div class="artist-catalog">
+        <!-- Mitski -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="mitski.JPG" alt="Mitski">
+          </div>
+          <div class="artist-info">
+            <a href="https://open.spotify.com/artist/2uYWxilOVlUdk4oV9DvwqK" target="_blank" class="artist-name">
+              Mitski
+            </a>
           </div>
         </div>
         
-        <!-- Slide 3 - Call to Action -->
-        <div class="carousel-item">
-          <div class="hero-content">
-            <h2 class="hero-title">Ready to Build Something Amazing?</h2>
-            <p class="hero-subtitle">Let's create the future together</p>
+        <!-- Clairo -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="clairo.JPG" alt="Clairo">
+          </div>
+          <div class="artist-info">
+            <a href="https://open.spotify.com/artist/7c4tBYhiPzVOGlsa8V5fSp" target="_blank" class="artist-name">
+              Clairo
+            </a>
+          </div>
+        </div>
+        
+        <!-- Beabadoobee -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="beabadoobee.JPG" alt="Beabadoobee">
+          </div>
+          <div class="artist-info">
+            <a href="https://open.spotify.com/artist/35l9BRT7MXmM8bv2WDQiyB" target="_blank" class="artist-name">
+              Beabadoobee
+            </a>
+          </div>
+        </div>
+        
+        <!-- MK.gee -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="mkgee.JPG" alt="MK.gee">
+          </div>
+          <div class="artist-info">
+            <a href="https://open.spotify.com/artist/4GvEc3ANtPPjt1ZJllr5Zl" target="_blank" class="artist-name">
+              MK.gee
+            </a>
+          </div>
+        </div>
+        
+        <!-- The Sundays -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="thesundays.JPG" alt="The Sundays">
+          </div>
+          <div class="artist-info">
+            <a href="https://open.spotify.com/artist/1Ffb6ejR6Fe5IamqA5oRUF" target="_blank" class="artist-name">
+              The Sundays
+            </a>
           </div>
         </div>
       </div>
-      
-      <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  </div>
+</section>
+<!-- CAMERA ROLL SECTION -->
+<section class="camera-roll-section">
+  <div class="container">
     
-    <!-- Carousel Indicators -->
-    <div class="carousel-indicators-custom">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    <div class="camera-header">
+      <h2>Camera Roll</h2>
+      <p>Moments, places, and quiet details.</p>
     </div>
+
+    <div class="camera-grid">      
+      <!-- Regular Images (16 total) -->
+      <div class="camera-item"><img src="a1.jpg"></div>
+      <div class="camera-item"><img src="a2.JPG"></div>
+      <div class="camera-item"><img src="a3.jpg"></div>
+      <div class="camera-item"><img src="a4.JPEG"></div>
+      <div class="camera-item"><img src="a5.JPG"></div>
+      <div class="camera-item"><img src="a6.JPG"></div>
+      <div class="camera-item"><img src="a7.JPG"></div>
+      <div class="camera-item"><img src="a8.JPG"></div>
+      <div class="camera-item"><img src="a11.JPG"></div>
+      <div class="camera-item"><img src="a9.JPG"></div>
+      <div class="camera-item"><img src="a12.JPG"></div>
+      <div class="camera-item"><img src="a13.JPG"></div>
+
+    </div>
+
   </div>
 </section>
 
@@ -156,6 +226,22 @@
   </div>
 </section>
 
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>&copy; 2026 Jaica-An Mansaludo | Information Technology Student</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/jmansaludo560022-coder" target="_blank" class="github-link" title="Visit my GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
 
 
@@ -167,6 +253,8 @@
 <script>
 document.getElementById('google-site-link').addEventListener('click', function(e) {
     e.preventDefault();
+
+
     // Replace this URL with your actual Google Site URL
     window.open('https://sites.google.com/your-google-site-url', '_blank');
 });
